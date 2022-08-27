@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Random Color Generator</title>
+</head>
+<body>
+    
+    <main>
+        <section id="color-history">
+            <h1>Latest colors</h1>
+            <div id="list-colors">
+            </div>
+        </section>
+
+        <section id="maincontenant">
+
+            <div class="active" id="any-color-generator" >
+                <h1>Any Color Generator</h1>
+                <div class="colors"></div>
+                <h2 class="colors-hex" onclick="copiedConfirm(this)"></h2>
+                <button class="btncolors" onclick="generateColor()">GENERATE COLOR</button>
+            </div>
+
+            <div class="inactive" id="pastel-color-generator" >
+                <h1>Pastel Color Generator</h1>
+                <div class="colors"></div>
+                <h2 class="colors-hex" onclick="copiedConfirm(this)"></h2>
+                <button class="btncolors" onclick="generateColor()">GENERATE COLOR</button>
+            </div>
+
+            <div class="inactive" id="bright-color-generator" >
+                <h1>Bright Color Generator</h1>
+                <div class="colors"></div>
+                <h2 class="colors-hex" onclick="copiedConfirm(this)"></h2>
+                <button class="btncolors" onclick="generateColor()">GENERATE COLOR</button>
+            </div>
+
+            <div class="inactive" id="dark-color-generator" >
+                <h1>Dark Color Generator</h1>
+                <div class="colors"></div>
+                <h2 class="colors-hex" onclick="copiedConfirm(this)"></h2>
+                <button class="btncolors" onclick="generateColor()">GENERATE COLOR</button>
+            </div>
+
+            <div class="inactive" id="anygradient-color-generator" >
+                <h1>Any Gradient Color Generator</h1>
+                <div class="colors"></div>
+                <h2 class="colors-hex" onclick="copiedConfirm(this)"></h2>
+                <button class="btncolors" onclick="generateColor()">GENERATE COLOR</button>
+            </div>
+
+            <div class="inactive" id="pastelgradient-color-generator" >
+                <h1>Pastel Gradient Color Generator</h1>
+                <div class="colors"></div>
+                <h2 class="colors-hex" onclick="copiedConfirm(this)"></h2>
+                <button class="btncolors" onclick="generateColor()">GENERATE COLOR</button>
+            </div>
+
+            <div class="inactive" id="brightgradient-color-generator" >
+                <h1>Bright Gradient Color Generator</h1>
+                <div class="colors"></div>
+                <h2 class="colors-hex" onclick="copiedConfirm(this)"></h2>
+                <button class="btncolors" onclick="generateColor()">GENERATE COLOR</button>
+            </div>
+
+            <div class="inactive" id="darkgradient-color-generator" >
+                <h1>Dark Gradient Color Generator</h1>
+                <div class="colors"></div>
+                <h2 class="colors-hex" onclick="copiedConfirm(this)"></h2>
+                <button class="btncolors" onclick="generateColor()">GENERATE COLOR</button>
+            </div>
+
+            
+
+        </section>
+
+        <section id="select-typecolor">
+            <h1>Select color generator</h1>
+            <div id="list-generators">
+                <button id="btn-any-color-generator" class="btncolors">Any Color Generator</button>
+                <button id="btn-pastel-color-generator" class="btncolors">Pastel Color Generator</button>
+                <button id="btn-bright-color-generator" class="btncolors">Bright Color Generator</button>
+                <button id="btn-dark-color-generator" class="btncolors">Dark Color Generator</button>
+                <button id="btn-anygradient-color-generator" class="btncolors">Any Gradient Generator</button>
+                <button id="btn-pastelgradient-color-generator" class="btncolors">Pastel Gradient Generator</button>
+                <button id="btn-brightgradient-color-generator" class="btncolors">Bright Gradient Generator</button>
+                <button id="btn-darkgradient-color-generator" class="btncolors">Dark Gradient Generator</button>
+                
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
